@@ -1,0 +1,29 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label="failures <= 0.5\nsamples = 100.0%\nvalue = [0.502, 0.498]\nclass = negative", fillcolor="#fffefd"] ;
+1 [label="higher_no <= 0.5\nsamples = 84.4%\nvalue = [0.424, 0.576]\nclass = positive", fillcolor="#cbe5f8"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="Walc <= 3.5\nsamples = 78.4%\nvalue = [0.385, 0.615]\nclass = positive", fillcolor="#b5daf5"] ;
+1 -> 2 ;
+3 [label="samples = 63.8%\nvalue = [0.329, 0.671]\nclass = positive", fillcolor="#9acdf2"] ;
+2 -> 3 ;
+4 [label="samples = 14.6%\nvalue = [0.63, 0.37]\nclass = negative", fillcolor="#f4cbad"] ;
+2 -> 4 ;
+5 [label="famsup_yes <= 0.5\nsamples = 6.0%\nvalue = [0.933, 0.067]\nclass = negative", fillcolor="#e78a47"] ;
+1 -> 5 ;
+6 [label="samples = 3.0%\nvalue = [0.867, 0.133]\nclass = negative", fillcolor="#e99457"] ;
+5 -> 6 ;
+7 [label="samples = 3.0%\nvalue = [1.0, 0.0]\nclass = negative", fillcolor="#e58139"] ;
+5 -> 7 ;
+8 [label="Medu <= 1.5\nsamples = 15.6%\nvalue = [0.923, 0.077]\nclass = negative", fillcolor="#e78c49"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="samples = 6.4%\nvalue = [1.0, 0.0]\nclass = negative", fillcolor="#e58139"] ;
+8 -> 9 ;
+10 [label="higher_no <= 0.5\nsamples = 9.2%\nvalue = [0.87, 0.13]\nclass = negative", fillcolor="#e99457"] ;
+8 -> 10 ;
+11 [label="samples = 6.4%\nvalue = [0.812, 0.188]\nclass = negative", fillcolor="#eb9e67"] ;
+10 -> 11 ;
+12 [label="samples = 2.8%\nvalue = [1.0, 0.0]\nclass = negative", fillcolor="#e58139"] ;
+10 -> 12 ;
+}
